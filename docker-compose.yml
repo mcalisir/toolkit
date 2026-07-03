@@ -10,7 +10,7 @@ services:
       OVERLEAF_MONGO_URL: mongodb://mongo/sharelatex
       OVERLEAF_REDIS_HOST: redis
     volumes:
-      - overleaf_data:/var/lib/sharelatex
+      - overleaf_data:/var/lib/overleaf
     depends_on:
       - mongo
       - redis
