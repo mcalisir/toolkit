@@ -1,5 +1,7 @@
 FROM sharelatex/sharelatex:6.2.1
 
+RUN tlmgr update --self
+
 RUN tlmgr install \
     tex-gyre \
     tex-gyre-math \
