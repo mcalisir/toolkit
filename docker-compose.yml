@@ -17,7 +17,7 @@ services:
       - redis
 
   mongo:
-    image: mongo:6
+    image: mongo:8
     restart: unless-stopped
     volumes:
       - mongo_data:/data/db
