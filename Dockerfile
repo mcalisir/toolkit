@@ -10,5 +10,9 @@ RUN tlmgr install \
     biblatex \
     biber \
     apa7 \
-    hyphen-turkish \
-    collection-langturkish
+    babel-turkish
+
+RUN tlmgr install hyphen-turkish || true
+
+RUN luaotfload-tool -fu || true
+RUN fmtutil-sys --all || true
